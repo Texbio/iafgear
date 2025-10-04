@@ -9,7 +9,7 @@ Currently there are no changes, but if there are changes they will be listed her
 - (may add dreadsteel + textures / other materials that are in new ice and fire versions)
 - (Maybe fix the silent gear outcomes? silent dragonsteel helm is weaker than normal dragonsteel helm)
 
-## Example Textures (created by Partonetrain in his original github):
+## Example Textures (edited by Partonetrain in his original github):
 
 -Lightning Dragon
 
