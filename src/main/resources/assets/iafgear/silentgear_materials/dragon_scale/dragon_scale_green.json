@@ -1,0 +1,20 @@
+{
+  "main/all": [
+    {
+      "texture": "silentgear:main_generic_hc",
+      "color": "#3F4F2B"
+    }
+  ],
+  "main/fragment": [
+    {
+      "texture": "silentgear:gem",
+      "color": "#3F4F2B"
+    }
+  ],
+  "main/armor": [
+    {
+      "texture": "iafgear:dragon_scale",
+      "color": "#3F4F2B"
+    }
+  ]
+}

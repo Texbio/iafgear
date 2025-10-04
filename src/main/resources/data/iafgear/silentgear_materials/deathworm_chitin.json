@@ -1,0 +1,49 @@
+{
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "type": "silentlib:exclusion",
+      "value": {
+        "tag": "iafgear:deathworm_chitin"
+      },
+      "exclusions": [
+      "iceandfire:deathworm_chitin_red",
+      "iceandfire:deathworm_chitin_white",
+      "iceandfire:deathworm_chitin_yellow"
+      ]
+    }
+  },
+  "name": {
+    "translate": "material.iafgear.deathworm_chitin"
+  },
+  "stats": {
+    "main": {
+      "durability": 0.0,
+      "armor_durability": 15.0,
+      "enchantability": 5.0,
+      "armor": 17.0,
+      "armor_toughness": 6.0,
+      "magic_armor": 12.0,
+      "ranged_damage": 3.0,
+      "ranged_speed": 0.1,
+      "rarity": 35.0,
+      "silentgems:chargeability": 1.5
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:flexible",
+        "level": 2
+      }
+    ]
+  }
+}

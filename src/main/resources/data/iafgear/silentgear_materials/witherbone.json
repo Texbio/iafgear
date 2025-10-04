@@ -1,0 +1,37 @@
+{
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "organic"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "subs": {
+      "rod": {
+        "item": "iceandfire:witherbone"
+      }
+    }
+  },
+  "name": {
+    "translate": "material.iafgear.witherbone"
+  },
+  "stats": {
+    "rod": {
+      "melee_damage": {
+        "mul2": 0.2
+      },
+      "rarity": 8.0
+    }
+  },
+  "traits": {
+    "rod": [
+      {
+        "name": "silentgear:flexible",
+        "level": 2
+      }
+    ]
+  }
+}

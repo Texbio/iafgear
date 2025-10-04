@@ -1,0 +1,40 @@
+package info.partonetrain.iafgear.trait;
+
+import com.github.alexthe666.iceandfire.event.ServerEvents;
+import com.github.alexthe666.iceandfire.item.IafItemRegistry;
+import info.partonetrain.iafgear.IAFGear;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
+import net.silentchaos512.gear.api.traits.ITraitSerializer;
+import net.silentchaos512.gear.gear.trait.SimpleTrait;
+
+import java.util.Collection;
+
+public class PhantasmalTrait extends SimpleTrait {
+
+
+    private static final ResourceLocation SERIALIZER_ID = IAFGear.getId("phantasmal_trait");
+
+    public static final ITraitSerializer<PhantasmalTrait> SERIALIZER = new Serializer<>(SERIALIZER_ID, PhantasmalTrait::new);
+
+    @Override
+    public void onItemSwing(ItemStack stack, LivingEntity entity, int traitLevel) {
+        //just use the event that's already there
+        ServerEvents.onLeftClick((Player) entity, IafItemRegistry.GHOST_SWORD.get().getDefaultInstance());
+    }
+
+
+    public PhantasmalTrait(ResourceLocation id) {
+        super(id, SERIALIZER);
+    }
+
+    @Override
+    public Collection<String> getExtraWikiLines() {
+        Collection<String> ret = super.getExtraWikiLines();
+        ret.add("The projectile is identical to that of a default, unenchanted Phantasmal Sword.");
+        return ret;
+    }
+
+}
